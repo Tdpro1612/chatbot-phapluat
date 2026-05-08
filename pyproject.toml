@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hoidapluathinhsu"
+version = "0.1.0"
+
+[tool.black]
+line-length = 88
+# Loại bỏ thư mục law và các thư mục rác khác
+force-exclude = '''
+/(
+    \.git
+  | law
+  | .venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+# Bỏ qua thư mục law
+skip = ["law", ".venv"]
+
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["test"] # Hoặc ["tests"] nếu bạn đã chuyển ra ngoài
