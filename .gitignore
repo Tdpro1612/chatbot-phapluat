@@ -1,6 +1,46 @@
-law/
-__pycahce__/
-*.pyc
-*.pyo
-*.pyd
-*.log
+# ==========================================
+# MÔI TRƯỜNG ẢO & PYTHON
+# ==========================================
+.venv/
+env/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+
+# ==========================================
+# CẤU HÌNH & BẢO MẬT (QUAN TRỌNG)
+# ==========================================
+.env
+*.env
+.secret
+secrets.yaml
+
+# ==========================================
+# HỆ THỐNG / IDE / OS
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ==========================================
+# DỮ LIỆU ĐẦU RA / DATABASE CỤM LƯU TRỮ TẠI CHỖ
+# ==========================================
+# Nếu sau này có sinh ra các file dữ liệu processed, vector db cục bộ thì ẩn đi
+data/processed/
+*.db
+*.sqlite
+chroma_db/
+qdrant_storage/
+
+# Python Packaging & Egg-info
+*.egg-info/
+dist/
+build/
+.eggs/
