@@ -1,6 +1,0 @@
-python-docx
-pylint
-pytest
-flake8
-isort
-black

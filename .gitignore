@@ -1,1 +1,6 @@
 law/
+__pycahce__/
+*.pyc
+*.pyo
+*.pyd
+*.log
